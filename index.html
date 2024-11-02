@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>copy the text</title>
+    <link rel="stylesheet" href="styling/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>copy to clipboard</h1>
+      <span class="highlight-text">
+        <textarea name="textarea" id="text-field" class="textfield">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis facere quam dolorum deleniti cumque quaerat veniam modi adipisci eum distinctio? Minus cupiditate praesentium, laborum labore iste vel obcaecati repellat asperiores!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas officia consequatur nostrum placeat cupiditate, quaerat fugit quo architecto libero nemo recusandae velit similique aliquid numquam voluptatum eius dicta. Non, cupiditate?
+         </textarea
+        >
+      </span>
+      <br />
+      <button class="copy-btn icon-btn">
+        copy<svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#5f6368"
+        >
+          <path
+            d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"
+          />
+        </svg>
+      </button>
+      <span class="copied">copied</span>
+    </div>
+    <script src="jQuery-file/jquery-3.7.1.min.js"></script>
+
+    <script src="query/script.js"></script>
+  </body>
+</html>

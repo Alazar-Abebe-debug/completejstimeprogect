@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #f3f4f7;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    align-items: center;
+    /* Centers vertically */
+    justify-content: center;
+    /* Centers horizontally*/
+  }
+
+  input,
+  textarea,
+  button {
+    font-family: inherit;
+  }
+
+  /* select the entire box */
+  .container {
+    width: 420px;
+    height: 530px;
+    padding: 25px;
+    background-color: #f3f4f7;
+    border: 10px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(71, 69, 69, 0.1);
+  }
+
+  #text-field {
+    border: gray solid 2px;
+    width: 100%;
+    height: 300px;
+    /*  text-align: center; */
+    margin: 20px 0;
+    padding: 10px;
+    background: transparent;
+    color: rgb(166, 164, 182);
+    border: 1px solid #52565e;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+   resize: none;
+  }
+
+  h1 {
+    padding: 20px 0;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 12px;
+    margin-top: 10px;
+    color: gray;
+  }
+
+  .copy-btn {
+    background-color: #037ef3;
+    color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100px;
+    border: none;
+    border-radius: 0.4rem;
+    font-weight: 600;
+    position: relative;
+    font-size: 16px;
+    bottom: 10px;
+    right: 60px;
+    cursor: pointer;
+    padding: 10px 15px;
+    outline: none;
+    text-transform: uppercase;
+    margin: 10px 10px 10px;
+  }
+
+  .copy-btn svg {
+    padding-left: 5px;
+    padding-top: 7px;
+  }
+
+  .copy-btn:active {
+    transform: scale(0.98);
+  }
+
+  /* 
+.highlight-text::selection {
+  border-color: gray;
+  color: wheat;
+  background-color: rgb(78, 78, 243);
+} */
+
+  /* To make the entire text inside textarea have a background temporarily */
+  .highlight-text {
+    border-color: rgb(107, 95, 95);
+    color: wheat;
+    background-color: #037ef3;
+  }
+  .icon-btn {
+    color: #ebeef1;
+    /* Change to your desired color */
+  }
+
+  .icon-btn svg {
+    fill: currentColor;
+    /* This allows the SVG to inherit the button's color */
+  }
+
+  span.copied {
+    display: block;
+    color: rgb(61, 54, 54);
+    margin-top: 30px;
+    position: relative;
+    top: 12px;
+    right: 32px;
+    font-size: 26px;
+    transition: all 0.5s;
+    transform: all 0.5s;
+    text-align: center;
+  }
+
+  span.bounce-effect {
+    animation: bounceIn 0.8s linear;
+  }
+
+  /*  BounceIn Animation*/
+
+  @keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+
+    20% {
+      opacity: 0;
+      transform: scale(1.1);
+    }
+
+    40% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+
+    60% {
+      opacity: 0;
+      transform: scale(1.03);
+    }
+
+    80% {
+      opacity: 0;
+      transform: scale(0.97);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
